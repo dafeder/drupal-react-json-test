@@ -1,0 +1,5 @@
+name = JSON Schema Field Test
+description = Builds form based on JSON schema and saves result to text area
+
+version = 7.x-1.x-dev
+core = 7.x

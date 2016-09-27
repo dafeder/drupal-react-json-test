@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function json_schema_field_test_menu() {
+  /*
+   *$items['blog'] = array(
+   *  'title' => 'blogs',
+   *  'page callback' => 'blog_page',
+   *  'access arguments' => array('access content'),
+   *  'type' => MENU_SUGGESTED_ITEM,
+   *);
+   */
+  $items['jsontest'] = array(
+    'title' => 'JSON Schema Test',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('json_schema_field_test_form'),
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+function json_schema_field_test_form() {
+	$form = array();
+
+}
